@@ -14,7 +14,7 @@ function enterSite(){
 
 function audio(){
 
-    let audio =new Audio("/original/media/Kasoor.mp3");
+    let audio =new Audio("original/media/Kasoor.mp3");
 
     audio.play();
     audio.volume=0.1;
