@@ -1,0 +1,249 @@
+html{
+    font-size: 24px;
+}
+body{
+    font-family: 'Amatic SC', cursive;
+    overflow: none;
+}
+::placeholder, a, a:hover { color: inherit; }
+
+body { cursor: default; overflow-x: none; }
+body, button, input { font-family: 'Amatic SC', cursive; }
+body > section:not([id="landing"]) { background-color: white; }
+input { outline: none; border: none; }
+figure, p { margin: 0; }
+
+.nav-item .nav-link:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: #292929 !important;
+    opacity: .7;
+}
+.navbar-toggler {
+    background-color: transparent !important; 
+    opacity: .8;
+    border-width: 1px !important;
+}
+.btn { padding: .2em 1.4em !important; }
+.bg-white { background-color: white !important; }
+.bg-fancy {
+    /* background by SVGBackgrounds.com */
+    background-color: #2e38f2; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='71' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='52' height='52' fill-opacity='0.6' fill='%232650ff'/%3E%3C/svg%3E"); background-attachment: fixed;
+}
+.dimmed { background-color: rgba(255, 255, 255, .8); }
+.text-muted {
+    color: inherit !important;
+    opacity: .9;
+}
+.bg-img-default {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.divider-sm {
+    width: 100px;
+    border-width: 6px;
+    border-color: inherit;
+}
+
+@keyframes start{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+@keyframes bttn{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.start{
+    animation: start 2s 19s;
+    animation-fill-mode: both;
+}
+.ok{
+    animation: start 2s 19.4s;
+    animation-fill-mode: both;
+}
+.bttn{
+
+    animation: bttn 2s 20s;
+    animation-fill-mode: backwards;
+}
+
+
+#top{
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    height: 2.8rem;
+    width: 100%;
+    font-size: 1.8rem;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transition: all 2s;
+    background-color: rgba(0, 0, 0, 0.72);
+
+}
+#top b{
+    margin-left: 1rem;
+}
+
+#landing{
+    background-image: linear-gradient(to right,rgba(184,184,184, .44),rgba(184,184,184, .44));
+    background-position: center;
+}
+
+#landing video{
+
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.1);
+    
+}
+
+#click{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 1.5rem;
+    transition: all 1.5s;
+
+}
+
+#ch{
+    border-radius: 1rem;
+    outline: none;
+}
+
+.bttn:hover{
+    opacity: .7;
+}
+
+#content{
+    
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 2s;
+    max-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+#transparent{
+    background-color: transparent;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+#main{
+
+    padding: 2.2rem 0;
+    background-color:rgba(0, 0, 0, 0.72);
+
+}
+
+#b{
+    background-color:rgba(255, 122, 228, 0.54);
+}
+#main header{
+    border-style: solid;
+    border-color: hotpink;
+
+}
+
+#main h4{
+    
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 1.3;
+}
+
+
+#main img{
+    height: 380px;
+    object-fit: cover;
+}
+#y{
+    margin-bottom: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+#main .card > div{
+    background-color: rgba(27,27,27, .6);
+    transform: translateX(100%);
+    transition: all .5s;
+}
+#ro{
+    padding: 50px;
+    padding-bottom: 20px;
+}
+#main .card:hover >div{
+    transform: translateX(0);
+}
+
+#main .card:hover >div{
+    transform: translateX();
+}
+
+#united{
+    background-color:transparent ;
+}
+
+#good img{
+
+    height: 200px;
+    padding: 0;
+    margin: 0;
+
+}
+
+#mar{
+    display: flex;
+    justify-content: center;
+   margin-left: 2em;
+   margin-right: 2em;
+}
+#k{
+    height: 220px;
+    width: 90%;
+}
+#tb{
+    margin-bottom:36px ;
+}
+#l{
+    height: 300px;
+    width: 2000px;
+    margin: 28px;
+}
+#f{
+    display: flex;
+    margin: 28px;
+}
+
+#n{
+    margin-top: 28px;
+}
+#v{
+    margin: 22px 0;
+    display: flex;
+    justify-content: center;
+}
+#s{
+    height: 300px;
+}
